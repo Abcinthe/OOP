@@ -1,5 +1,5 @@
 class Pet:
-    def __int__(self, name, age):
+    def __init__(self, name, age):
         self.name = name
         self.age = age
 
@@ -8,7 +8,7 @@ class Pet:
 
 
 class Cat(Pet):
-    def __int__(self, name, age, color):
+    def __init__(self, name, age, color):
         super.__init__(name, age)
         self.color = color
 
@@ -25,7 +25,7 @@ class Dog(Pet):
 class Fish(Pet):
     pass
 
-p = Cat('blue', 45, "green")
+p = Cat('blue', 45, "red")
 p.show()
 # p = Pet('Bill', 19)
 # p.show()

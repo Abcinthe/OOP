@@ -30,3 +30,4 @@ print(d2.get_age())
 
 # dogs_name = ['Cat', 'Fish']
 # dogs_age = [32, 14]
+# print(dogs_name)

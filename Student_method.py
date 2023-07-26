@@ -2,10 +2,11 @@
 
 class Student:
 
-    def __int__(self, name, age, grade):
+    def __init__(self, name, age, grade):
         self.name = name
         self.age = age
         self.grade = grade
+        self.course = []
 
     def get_grade(self, grade):
         self.grade = grade
@@ -13,7 +14,7 @@ class Student:
 
 class Course:
 
-    def __int__(self, name, max_students):
+    def __init__(self, name, max_students):
         self.name = name
         self.max_students = max_students
         self.name = []
