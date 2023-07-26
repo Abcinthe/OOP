@@ -9,7 +9,7 @@ class Student:
         self.course = []
 
     def get_grade(self):
-        return  self.grade
+        return self.grade
 
 
 class Course:
