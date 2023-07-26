@@ -1,21 +1,22 @@
 class Person:
-    number_of_Person = 0
+    number_of_people = 0
 
-    def __int__(self, name):
+    def __init__(self, name):
         self.name = name
         Person.add_person()
 
     @classmethod
-    def nummber_of_people(cls):
-        return cls.number_of_Person()
+    def number_of_people_(cls):
+        return cls.number_of_people
 
     @classmethod
     def add_person(cls):
-        cls.number_of_Person += 1
+        cls.number_of_people += 1
 
 
 p1 = Person('Tim')
-# print(Person.number_of_Person)
+print(Person.number_of_people)
 p2 = Person("Bill")
-# print(Person.number_of_Person)
-print(Person.number_of_Person())
+print(Person.number_of_people)
+print(Person.number_of_people_())
+
