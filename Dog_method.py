@@ -1,7 +1,7 @@
 # example about OOP
 
 class Dog:
-    def __int__(self, name, age):
+    def __init__(self, name, age):
         self.name = name
         # print(name)
         self.age = age
@@ -21,12 +21,12 @@ class Dog:
     # def add_one(self,x):
     #     return x + 1
 
-# d = Dog("Cat", 2)
-# print(d.name)
-# print(d.get_age())
-# d2 = Dog("Fish", 4)
-# print(d2.name)
-# print(d2.get_age())
+d = Dog("Cat", 2)
+print(d.name)
+print(d.get_age())
+d2 = Dog("Fish", 4)
+print(d2.name)
+print(d2.get_age())
 
-dogs_name = ['Cat', 'Fish']
-dogs_age = [32, 14]
+# dogs_name = ['Cat', 'Fish']
+# dogs_age = [32, 14]
