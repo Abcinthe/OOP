@@ -8,8 +8,8 @@ class Student:
         self.grade = grade
         self.course = []
 
-    def get_grade(self, grade):
-        self.grade = grade
+    def get_grade(self):
+        return  self.grade
 
 
 class Course:
@@ -17,7 +17,7 @@ class Course:
     def __init__(self, name, max_students):
         self.name = name
         self.max_students = max_students
-        self.name = []
+        self.students = []
 
     def add_student(self, student):
         if len(self.students) < self.max_students:
@@ -25,7 +25,7 @@ class Course:
             return True
         return False
 
-    def get_average_grade(self, ):
+    def get_average_grade(self):
         value = 0
         for student in self.students:
             value += student.get_grade()
@@ -40,5 +40,6 @@ course = Course('Math', 2)
 course.add_student(s1)
 course.add_student(s2)
 
-print(course.add_student(s3))
+print(course.get_average_grade())
+print(course.add_student(s2))
 print(course.students[0].name)
