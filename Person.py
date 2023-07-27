@@ -44,3 +44,4 @@ if __name__ == '__main__':
     club_mu = Club('mu_fc', 'football', 100)
     person_1.join_club(club_mu)
     print(person_1.club.show_club())
+
